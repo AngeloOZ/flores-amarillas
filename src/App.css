@@ -115,18 +115,69 @@
   left: 240px;
 }
 
+html{
+  background-color: #030303;
+}
+
 @media screen and (max-width: 520px) {
-  .container_flores {
-    transform: scale(0.9);
+  @keyframes floresanimate {
+    0% {
+      transform: scale(0.9) rotate(-5deg);
+    }
+    50% {
+      transform: scale(0.9) rotate(5deg);
+    }
+    100% {
+      transform: scale(0.9) rotate(-5deg);
+    }
   }
 }
 @media screen and (max-width: 400px) {
+  .main {
+    height: auto;
+  }
+
   .container_flores {
-    transform: scale(0.75);
+    transform: scale(0.85);
+  }
+
+  @keyframes floresanimate {
+    0% {
+      transform: scale(0.85) rotate(-5deg);
+    }
+    50% {
+      transform: scale(0.85) rotate(5deg);
+    }
+    100% {
+      transform: scale(0.85) rotate(-5deg);
+    }
+  }
+
+  .title {
+    font-size: 2rem;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .parrafo {
+    font-size: 1rem;
   }
 }
+
 @media screen and (max-width: 350px) {
   .container_flores {
     transform: scale(0.6);
+  }
+
+  @keyframes floresanimate {
+    0% {
+      transform: scale(0.6) rotate(-5deg);
+    }
+    50% {
+      transform: scale(0.6) rotate(5deg);
+    }
+    100% {
+      transform: scale(0.6) rotate(-5deg);
+    }
   }
 }
