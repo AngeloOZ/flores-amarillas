@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import "./App.css";
-import { Flor } from "./components/Flor/flor";
+import { Flor } from "./components/Flor/Flor";
 
 function App() {
   const audio = useRef(null);
